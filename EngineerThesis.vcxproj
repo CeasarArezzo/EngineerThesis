@@ -140,6 +140,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EngineerThesis.cpp" />
+    <ClCompile Include="InstanceReader.cpp" />
+    <ClCompile Include="ProblemInstance.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\tai100_10.txt" />
+    <Text Include="Data\tai100_20.txt" />
+    <Text Include="Data\tai100_5.txt" />
+    <Text Include="Data\tai200_10.txt" />
+    <Text Include="Data\tai200_20.txt" />
+    <Text Include="Data\tai20_10.txt" />
+    <Text Include="Data\tai20_20.txt" />
+    <Text Include="Data\tai20_5.txt" />
+    <Text Include="Data\tai500_20.txt" />
+    <Text Include="Data\tai50_10.txt" />
+    <Text Include="Data\tai50_20.txt" />
+    <Text Include="Data\tai50_5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InstanceReader.h" />
+    <ClInclude Include="ProblemInstance.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

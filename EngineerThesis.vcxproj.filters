@@ -13,10 +13,65 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{f722acfd-fc1f-4ab1-9a00-ee28bcae361c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="EngineerThesis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ProblemInstance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="InstanceReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\tai500_20.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai20_5.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai20_10.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai20_20.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai50_5.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai50_10.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai50_20.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai100_5.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai100_10.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai100_20.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai200_10.txt">
+      <Filter>Data</Filter>
+    </Text>
+    <Text Include="Data\tai200_20.txt">
+      <Filter>Data</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProblemInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InstanceReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
