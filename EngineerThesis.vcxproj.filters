@@ -21,10 +21,10 @@
     <ClCompile Include="EngineerThesis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProblemInstance.cpp">
+    <ClCompile Include="Src\ProblemInstance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InstanceReader.cpp">
+    <ClCompile Include="Src\InstanceReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -67,10 +67,10 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ProblemInstance.h">
+    <ClInclude Include="Headers\InstanceReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InstanceReader.h">
+    <ClInclude Include="Headers\ProblemInstance.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

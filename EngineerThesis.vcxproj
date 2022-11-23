@@ -88,6 +88,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ceasa\Desktop\Studia\EngineerThesis\Src;C:\Users\ceasa\Desktop\Studia\EngineerThesis\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -140,8 +141,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EngineerThesis.cpp" />
-    <ClCompile Include="InstanceReader.cpp" />
-    <ClCompile Include="ProblemInstance.cpp" />
+    <ClCompile Include="Src\InstanceReader.cpp" />
+    <ClCompile Include="Src\ProblemInstance.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data\tai100_10.txt" />
@@ -158,8 +159,8 @@
     <Text Include="Data\tai50_5.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InstanceReader.h" />
-    <ClInclude Include="ProblemInstance.h" />
+    <ClInclude Include="Headers\InstanceReader.h" />
+    <ClInclude Include="Headers\ProblemInstance.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

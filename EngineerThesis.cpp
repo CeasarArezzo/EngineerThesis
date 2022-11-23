@@ -10,7 +10,6 @@ int main()
     vector<ProblemInstance> vect;
 
     vect = readProblemInstance(20, 5);
-    vect[0].print();
 
 
     //ProblemInstance pI = ProblemInstance(1, 1, 1, 1, 1, vect);
