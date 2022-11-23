@@ -24,7 +24,6 @@ vector<ProblemInstance> readProblemInstance(size_t noOfJobs, size_t noOfMachines
 		pI.upperB = readVal;
 		reader >> readVal;
 		pI.lowerB = readVal;
-		std::cout << pI.toString() << "\n";
 
 		//skip second line:
 		std::getline(reader, tmp);
@@ -36,11 +35,11 @@ vector<ProblemInstance> readProblemInstance(size_t noOfJobs, size_t noOfMachines
 			for (size_t job = 0; job < noOfJobs; job++)
 			{
 				reader >> procTimes[job][mchn];
-				std::cout << procTimes[job][mchn] << " ";
 			}
-			std::cout << "\n";
 		}
 		std::getline(reader, tmp);
+		pI.procTime = procTimes;
+		vect.push_back(pI);
 	}
 	
 	return vect;

@@ -30,3 +30,16 @@ std::string ProblemInstance::toString()
 	std::string output = "Instance Info\nNoOfJobs: " + to_string(noOfJobs) + ", noOfMachines: " + to_string(noOfMachines) + ", initSeed: " + to_string(initSeed) + ", upperB: " + to_string(upperB) + ", lowerB: " + to_string(lowerB);
 	return output;
 }
+
+void ProblemInstance::print()
+{
+	std::cout << toString() << "\n";
+	for (size_t mchn = 0; mchn < noOfMachines; mchn++)
+	{
+		for (size_t job = 0; job < noOfJobs; job++)
+		{
+			std::cout << procTime[job][mchn] << " ";
+		}
+		std::cout << "\n";
+	}
+}

@@ -18,6 +18,7 @@ class ProblemInstance
 			size_t upperB, size_t lowerB, vector<vector<size_t>> procTime);
 		ProblemInstance();
 		std::string toString();
+		void print();
 };
 
 #endif

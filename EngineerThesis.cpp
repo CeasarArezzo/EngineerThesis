@@ -7,11 +7,11 @@
 
 int main()
 {
-    vector<vector<size_t>> vect;
-    vector<size_t> v1;
-    vect.push_back(v1);
+    vector<ProblemInstance> vect;
 
-    readProblemInstance(20, 5);
+    vect = readProblemInstance(20, 5);
+    vect[0].print();
+
 
     //ProblemInstance pI = ProblemInstance(1, 1, 1, 1, 1, vect);
     //pI.procTime.push_back(v1);
