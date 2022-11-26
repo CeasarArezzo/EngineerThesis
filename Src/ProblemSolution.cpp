@@ -9,7 +9,7 @@ size_t calculateCompletionTime(ProblemInstance* pI, vector<size_t>* solution, si
 
 size_t calculateMakespan(ProblemInstance* pI, vector<size_t> solution)
 {
-	return calculateCompletionTime(pI, &solution, pI->noOfJobs - 1, pI->noOfMachines - 1);
+	return calculateCompletionTime(pI, &solution, solution.size() - 1, pI->noOfMachines - 1);
 }
 
 size_t calculateCompletionTime(ProblemInstance* pI, vector<size_t>* solution, size_t job, size_t machine)

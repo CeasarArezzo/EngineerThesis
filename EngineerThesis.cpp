@@ -10,6 +10,6 @@ int main()
 {
     vector<ProblemInstance> vect;
     vect = readProblemInstance(5, 3);
-    vector<size_t> solution = { 2, 1, 4, 3, 0 };
+    vector<size_t> solution = { 2};
     std::cout << calculateMakespan(&vect.at(0), solution) << "\n";
 }
