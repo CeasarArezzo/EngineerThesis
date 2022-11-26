@@ -143,6 +143,7 @@
     <ClCompile Include="EngineerThesis.cpp" />
     <ClCompile Include="Src\InstanceReader.cpp" />
     <ClCompile Include="Src\ProblemInstance.cpp" />
+    <ClCompile Include="Src\ProblemSolution.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data\tai100_10.txt" />
@@ -157,10 +158,13 @@
     <Text Include="Data\tai50_10.txt" />
     <Text Include="Data\tai50_20.txt" />
     <Text Include="Data\tai50_5.txt" />
+    <Text Include="Data\tai5_3.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\InstanceReader.h" />
     <ClInclude Include="Headers\ProblemInstance.h" />
+    <ClInclude Include="Headers\ProblemSolution.h" />
+    <ClInclude Include="Headers\ProblemSolver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -27,6 +27,9 @@
     <ClCompile Include="Src\InstanceReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Src\ProblemSolution.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Data\tai500_20.txt">
@@ -65,12 +68,21 @@
     <Text Include="Data\tai200_20.txt">
       <Filter>Data</Filter>
     </Text>
+    <Text Include="Data\tai5_3.txt">
+      <Filter>Data</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\InstanceReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Headers\ProblemInstance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ProblemSolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\ProblemSolution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

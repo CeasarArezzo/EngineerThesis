@@ -4,14 +4,12 @@
 #include <iostream>
 #include "ProblemInstance.h"
 #include "InstanceReader.h"
+#include "ProblemSolution.h"
 
 int main()
 {
     vector<ProblemInstance> vect;
-
-    vect = readProblemInstance(20, 5);
-
-
-    //ProblemInstance pI = ProblemInstance(1, 1, 1, 1, 1, vect);
-    //pI.procTime.push_back(v1);
+    vect = readProblemInstance(5, 3);
+    vector<size_t> solution = { 2, 1, 4, 3, 0 };
+    std::cout << calculateMakespan(&vect.at(0), solution) << "\n";
 }
