@@ -13,7 +13,7 @@ class ProblemInstance
 		size_t initSeed;
 		size_t upperB;
 		size_t lowerB;
-		vector<vector<size_t>> procTime;
+		vector<vector<size_t>> procTime; //[job][machine]
 		ProblemInstance(size_t noOfJobs, size_t noOfMachines, size_t initSeed,
 			size_t upperB, size_t lowerB, vector<vector<size_t>> procTime);
 		ProblemInstance();

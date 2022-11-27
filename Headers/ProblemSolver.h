@@ -5,7 +5,7 @@
 
 class ProblemSolver
 {
-	virtual ProblemSolution solve(ProblemInstance) = 0;
+	virtual vector<size_t> solve(ProblemInstance*) = 0;
 };
 
 #endif

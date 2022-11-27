@@ -142,6 +142,7 @@
   <ItemGroup>
     <ClCompile Include="EngineerThesis.cpp" />
     <ClCompile Include="Src\InstanceReader.cpp" />
+    <ClCompile Include="Src\NehSolver.cpp" />
     <ClCompile Include="Src\ProblemInstance.cpp" />
     <ClCompile Include="Src\ProblemSolution.cpp" />
   </ItemGroup>
@@ -162,6 +163,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\InstanceReader.h" />
+    <ClInclude Include="Headers\NehSolver.h" />
     <ClInclude Include="Headers\ProblemInstance.h" />
     <ClInclude Include="Headers\ProblemSolution.h" />
     <ClInclude Include="Headers\ProblemSolver.h" />

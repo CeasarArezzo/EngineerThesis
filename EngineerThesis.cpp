@@ -5,11 +5,13 @@
 #include "ProblemInstance.h"
 #include "InstanceReader.h"
 #include "ProblemSolution.h"
+#include "NehSolver.h"
 
 int main()
 {
     vector<ProblemInstance> vect;
-    vect = readProblemInstance(5, 3);
-    vector<size_t> solution = { 2};
-    std::cout << calculateMakespan(&vect.at(0), solution) << "\n";
+    vect = readProblemInstance(20, 5);
+    NehSolver neh;
+    vector<size_t> sol = neh.solve(&vect[0]);
+    //std::cout << calculateMakespan(&vect[0], sol) << "\n";;
 }
