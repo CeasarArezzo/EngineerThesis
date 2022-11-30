@@ -25,12 +25,12 @@ vector<size_t> NehSolver::solve(ProblemInstance* pI)
 	while(!unsortedTasks.empty())
 	{
 		size_t nextTask = unsortedTasks.top().second;
-		size_t currBest = UINTMAX_MAX;
-		size_t currBestValue = UINTMAX_MAX;
+		size_t currBest = UINT_MAX;
+		size_t currBestValue = UINT_MAX;
 		for (size_t pos = 0; pos <= solution.size(); pos++)
 		{
 			size_t currValue = getMakespanWithInsert(pI, solution, pos, nextTask);
-			std::cout << unsortedTasks.size() << " " << solution.size() << "\n";
+			//std::cout << unsortedTasks.size() << " " << solution.size() << "\n";
 			if (currValue < currBestValue)
 			{
 				currBestValue = currValue;
