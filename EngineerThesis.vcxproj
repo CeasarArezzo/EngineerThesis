@@ -147,6 +147,7 @@
     <ClCompile Include="Src\ProblemSolution.cpp" />
     <ClCompile Include="Src\ProblemSolver.cpp" />
     <ClCompile Include="Src\SaSolver.cpp" />
+    <ClCompile Include="Src\Tester.cpp" />
     <ClCompile Include="Src\util.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -171,6 +172,7 @@
     <ClInclude Include="Headers\ProblemSolution.h" />
     <ClInclude Include="Headers\ProblemSolver.h" />
     <ClInclude Include="Headers\SaSolver.h" />
+    <ClInclude Include="Headers\Tester.h" />
     <ClInclude Include="Headers\util.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
