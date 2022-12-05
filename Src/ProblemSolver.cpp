@@ -3,8 +3,9 @@
 #include <stdexcept>
 #include "ProblemSolver.h"
 #include "util.h"
+#include "NehSolver.h"
 
-vector<size_t> getInitialSolution(size_t length, initSolutionType solType)
+vector<size_t> getInitialSolution(size_t length, initSolutionType solType, ProblemInstance* pI)
 {
 	vector<size_t> retVal(length);
 	switch (solType)
@@ -18,6 +19,11 @@ vector<size_t> getInitialSolution(size_t length, initSolutionType solType)
 	case initSolutionType::DEFAULT:
 	{
 		std::iota(retVal.begin(), retVal.end(), 0);
+		break;
+	}
+	case initSolutionType::NEH:
+	{
+		retVal = NehSolver().solve(pI);
 		break;
 	}
 	}

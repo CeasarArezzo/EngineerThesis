@@ -3,8 +3,6 @@
 #include <utility>
 using std::pair;
 
-#include <iostream>
-
 typedef pair<size_t, size_t> pi;
 
 size_t getMakespanWithInsert(ProblemInstance* pI, vector<size_t> solution, size_t insertIndex, size_t insertValue);
@@ -43,7 +41,7 @@ vector<size_t> NehSolver::solve(ProblemInstance* pI)
 	return solution;
 }
 
-size_t getMakespanWithInsert(ProblemInstance* pI, vector<size_t> solution, size_t insertIndex, size_t insertValue)
+size_t NehSolver::getMakespanWithInsert(ProblemInstance* pI, vector<size_t> solution, size_t insertIndex, size_t insertValue)
 {
 	solution.insert(solution.begin() + insertIndex, insertValue);
 	return calculateMakespan(pI, solution);

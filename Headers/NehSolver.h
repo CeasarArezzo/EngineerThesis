@@ -8,6 +8,7 @@ class NehSolver:ProblemSolver
 {
 	public:
 		vector<size_t> solve(ProblemInstance* pI);
+		size_t getMakespanWithInsert(ProblemInstance* pI, vector<size_t> solution, size_t insertIndex, size_t insertValue);
 };
 
 #endif

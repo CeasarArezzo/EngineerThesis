@@ -3,13 +3,13 @@
 #include "InstanceReader.h"
 #include "ProblemInstance.h"
 #include "ProblemSolver.h"
-#include <iostream>
+//#include <iostream>
 using std::vector;
 
 void testMakespanCalculation()
 {
-	size_t jobNumber = 5;
-	size_t mchnNumber = 3;
+	size_t jobNumber = 20;
+	size_t mchnNumber = 5;
 	vector<ProblemInstance> instances = readProblemInstance(jobNumber, mchnNumber);
 	vector<size_t> solution(jobNumber);
 	std::iota(solution.begin(), solution.end(), 0);
@@ -18,7 +18,7 @@ void testMakespanCalculation()
 		ProblemInstance pI = instances.at(i);
 		size_t res1 = calculateMakespan(&pI, solution);
 		size_t res2 = calculateMakespan2(&pI, solution);
-		std::cout << res1 << " " << res2 << "\n";
+		//std::cout << res1 << " " << res2 << "\n";
 		assert(res1 == res2);
 	}
 }

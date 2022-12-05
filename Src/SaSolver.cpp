@@ -4,7 +4,7 @@
 
 vector<size_t> SaSolver::solve(ProblemInstance* pI)
 {
-	vector<size_t> currSol = getInitialSolution(pI->noOfJobs, this->paramSolutiontype);
+	vector<size_t> currSol = getInitialSolution(pI->noOfJobs, this->paramSolutiontype, pI);
 	vector<size_t> bestSol(currSol);
 	size_t currMakespan = calculateMakespan(pI, bestSol);
 	size_t bestMakespan = currMakespan;

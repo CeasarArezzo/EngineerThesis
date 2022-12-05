@@ -141,8 +141,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="EngineerThesis.cpp" />
+    <ClCompile Include="Src\AcsaSolver.cpp" />
     <ClCompile Include="Src\InstanceReader.cpp" />
     <ClCompile Include="Src\NehSolver.cpp" />
+    <ClCompile Include="Src\NehXSolver.cpp" />
     <ClCompile Include="Src\ProblemInstance.cpp" />
     <ClCompile Include="Src\ProblemSolution.cpp" />
     <ClCompile Include="Src\ProblemSolver.cpp" />
@@ -166,8 +168,10 @@
     <Text Include="Data\tai5_3.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Headers\AcsaSolver.h" />
     <ClInclude Include="Headers\InstanceReader.h" />
     <ClInclude Include="Headers\NehSolver.h" />
+    <ClInclude Include="Headers\NehXSolver.h" />
     <ClInclude Include="Headers\ProblemInstance.h" />
     <ClInclude Include="Headers\ProblemSolution.h" />
     <ClInclude Include="Headers\ProblemSolver.h" />
