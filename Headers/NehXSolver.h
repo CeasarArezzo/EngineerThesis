@@ -10,9 +10,10 @@ class NehXSolver:NehSolver
 		vector<size_t> solve(ProblemInstance* pI);
 		size_t getShortestProcTimeTask(ProblemInstance* pI, vector <size_t> solution);
 		size_t getLongestOpOnCritPath(ProblemInstance* pI, 
-			vector<size_t> solution, size_t lastInsertedTask);
-		void setParams(size_t attempts);
-		size_t attemptsBeforeResign = 10;
+			vector<size_t> solution, size_t ignoredTask);
+		size_t getBiggestSumOnCritPath(ProblemInstance* pI, vector<size_t> solution, size_t ignoredTask);
+		size_t getBiggestCountOnCritPath(ProblemInstance* pI, vector<size_t> solution, size_t ignoredTask);
+		size_t getNextTaskToMove(ProblemInstance* pI, vector<size_t> solution, size_t ignoredTask);
 };
 
 #endif

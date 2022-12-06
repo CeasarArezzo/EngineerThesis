@@ -3,6 +3,7 @@
 #include <stdexcept>
 #include "ProblemSolver.h"
 #include "util.h"
+#include <iostream>
 #include "NehSolver.h"
 
 vector<size_t> getInitialSolution(size_t length, initSolutionType solType, ProblemInstance* pI)

@@ -5,8 +5,6 @@ using std::pair;
 
 typedef pair<size_t, size_t> pi;
 
-size_t getMakespanWithInsert(ProblemInstance* pI, vector<size_t> solution, size_t insertIndex, size_t insertValue);
-
 vector<size_t> NehSolver::solve(ProblemInstance* pI)
 {
 	std::priority_queue< pair<size_t, size_t>> unsortedTasks;

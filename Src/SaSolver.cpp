@@ -66,7 +66,7 @@ double SaSolver::reduceTemperature(double temperature, double coolingRate, cooli
 bool SaSolver::calculateAcceptance(size_t neighMakespan, size_t currMakespan, double temperature)
 {
 	double randN = randomDouble(1.0);
-	if (neighMakespan > currMakespan)
+	if (neighMakespan >= currMakespan)
 	{
 		long double probabilityOfAccept = exp((long double)(neighMakespan - currMakespan) / temperature);
 		probabilityOfAccept = (long double) 1 / probabilityOfAccept;

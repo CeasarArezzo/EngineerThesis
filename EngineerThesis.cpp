@@ -8,23 +8,32 @@
 #include "SaSolver.h"
 #include "util.h"
 #include "Tester.h"
-
+#include "AcsaSolver.h"
 
 int main()
 {
     setup();
     testMakespanCalculation();
     vector<ProblemInstance> vect;
-    vect = readProblemInstance(20, 5);
-    //NehXSolver().solve(&vect[0]);
-    SaSolver sa;
-    sa.setSolvingParams(initSolutionType::RAND, neighType::SWAP, coolingType::GEOMETRICAL, 150, 1.5, 300, 0.96);
-    for (size_t i = 0; i < 20; i++)
+    vect = readProblemInstance(20, 10);
+    for (size_t i = 0; i < 10; i++)
     {
-        vector<size_t> solution = sa.solve(&vect[0]);
-        printVect(solution);
-        std::cout << calculateMakespan(&vect[0], solution) << " " << vect[0].upperB << "\n\n";
+        ProblemInstance* pI = &vect[i];
+        NehXSolver nehx;
+        vector<size_t> solution = nehx.solve(pI);
+        vector<size_t> solution2 = NehSolver().solve(pI);
+        std::cout << calculateMakespan(pI, solution) << " " << pI->upperB << "\n";
+        std::cout << calculateMakespan(pI, solution2) << " " << pI->upperB << "\n";
     }
+    /*AcsaSolver asca;
+    SaSolver sa;
+    asca.setSolvingParams(initSolutionType::RAND, neighType::INSERT, 1, 20 * 20, 20 * 20, 1.0);
+    sa.setSolvingParams(initSolutionType::RAND, neighType::INSERT, coolingType::GEOMETRICAL, 150, 1, 500, 0.95);
+    vector<size_t> solution = asca.solve(pI);
+    vector<size_t> saSolution = sa.solve(pI);
+    printVect(solution);
+    std::cout << calculateMakespan(pI, solution) << " " << pI->upperB << "\n";
+    std::cout << calculateMakespan(pI, saSolution) << " " << pI->upperB << "\n";*/
     
     /*size_t a = 1700, b = 1900;
     double temperature = 20;
