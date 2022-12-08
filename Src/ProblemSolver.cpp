@@ -5,6 +5,7 @@
 #include "util.h"
 #include <iostream>
 #include "NehSolver.h"
+#include <assert.h>
 
 vector<size_t> getInitialSolution(size_t length, initSolutionType solType, ProblemInstance* pI)
 {
@@ -108,5 +109,12 @@ vector <size_t> vectorInvert(vector<size_t> sol, size_t rand1, size_t rand2)
 	{
 		std::reverse(sol.begin() + rand1, sol.begin() + rand2 + 1);
 	}
+	return sol;
+}
+
+vector<size_t> ProblemSolver::solve(ProblemInstance*)
+{
+	assert(false);
+	vector<size_t> sol(1);
 	return sol;
 }

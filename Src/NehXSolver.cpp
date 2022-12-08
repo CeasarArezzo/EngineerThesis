@@ -10,13 +10,13 @@ vector<size_t> NehXSolver::solve(ProblemInstance* pI)
 	vector<size_t> solution = NehSolver().solve(pI);
 	//printVect(solution);
 	//std::cout << calculateMakespan(pI, solution) << "\n";
-	size_t maxAttempts = pI->noOfJobs * 3;
+	size_t maxAttempts = this->paramIters;
 	size_t lastInsertedTask = getShortestProcTimeTask(pI, solution);
 	for (size_t i = 0; i < maxAttempts; i++)
 	{
 		size_t taskToMove = getNextTaskToMove(pI, solution, lastInsertedTask);
 		//taskToMove = randomUint(pI->noOfJobs);
-		std::cout << taskToMove << "\n";
+		//std::cout << taskToMove << "\n";
 		size_t nextTask = solution.at(taskToMove);
 		solution.erase(solution.begin() + taskToMove);
 		size_t currBest = 0;
@@ -247,4 +247,9 @@ size_t NehXSolver::getShortestProcTimeTask(ProblemInstance* pI, vector<size_t> s
 		}
 	}
 	return currTaskId;
+}
+
+void NehXSolver::setParams(size_t iters)
+{
+	paramIters = iters;
 }

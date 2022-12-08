@@ -2,7 +2,7 @@
 #define ACSA_SOLVER_H
 #include "SaSolver.h"
 
-class AcsaSolver : SaSolver
+class AcsaSolver : public SaSolver
 {
 	public:
 		vector<size_t> solve(ProblemInstance*);

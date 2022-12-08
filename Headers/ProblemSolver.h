@@ -33,7 +33,8 @@ vector <size_t> vectorInvert(vector<size_t> sol, size_t rand1, size_t rand2);
 
 class ProblemSolver
 {
-	virtual vector<size_t> solve(ProblemInstance*) = 0;
+public:
+	virtual vector<size_t> solve(ProblemInstance*);
 };
 
 #endif

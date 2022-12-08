@@ -1,6 +1,7 @@
 #include <cmath>
 #include "SaSolver.h"
 #include "util.h"
+//#include <iostream>
 
 vector<size_t> SaSolver::solve(ProblemInstance* pI)
 {
@@ -46,6 +47,7 @@ double SaSolver::reduceTemperature(double temperature, double coolingRate, cooli
 	case coolingType::GEOMETRICAL:
 	{
 		temperature *= coolingRate;
+		//std::cout << "\ttemp " << temperature << "\n";
 		break;
 	}
 	case coolingType::LOGARITHMIC:
@@ -75,7 +77,7 @@ bool SaSolver::calculateAcceptance(size_t neighMakespan, size_t currMakespan, do
 	return true;
 }
 
-void SaSolver::setSolvingParams(initSolutionType initSol, neighType neigh, coolingType selCooling, 
+void SaSolver::setParams(initSolutionType initSol, neighType neigh, coolingType selCooling,
 	double T0, double Tend, size_t iters, double coolingRate)
 {
 	this->paramSolutiontype = initSol;

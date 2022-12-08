@@ -103,6 +103,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\ceasa\Desktop\Studia\EngineerThesis\Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -142,6 +143,7 @@
   <ItemGroup>
     <ClCompile Include="EngineerThesis.cpp" />
     <ClCompile Include="Src\AcsaSolver.cpp" />
+    <ClCompile Include="Src\Experiments.cpp" />
     <ClCompile Include="Src\InstanceReader.cpp" />
     <ClCompile Include="Src\NehSolver.cpp" />
     <ClCompile Include="Src\NehXSolver.cpp" />
@@ -169,6 +171,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\AcsaSolver.h" />
+    <ClInclude Include="Headers\Experiments.h" />
     <ClInclude Include="Headers\InstanceReader.h" />
     <ClInclude Include="Headers\NehSolver.h" />
     <ClInclude Include="Headers\NehXSolver.h" />

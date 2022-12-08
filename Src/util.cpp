@@ -37,3 +37,80 @@ double randomDouble(double upperB)
 {
 	return randomDouble(0, upperB);
 }
+
+vector<pair<size_t, size_t>> getAllInstanceSizes()
+{
+	vector<pair<size_t, size_t>> instanceSizes;
+	instanceSizes.push_back(make_pair(20, 5));
+	instanceSizes.push_back(make_pair(20, 10));
+	instanceSizes.push_back(make_pair(20, 20));
+	instanceSizes.push_back(make_pair(50, 5));
+	instanceSizes.push_back(make_pair(50, 10));
+	instanceSizes.push_back(make_pair(50, 20));
+	instanceSizes.push_back(make_pair(100, 5));
+	instanceSizes.push_back(make_pair(100, 10));
+	instanceSizes.push_back(make_pair(100, 20));
+	instanceSizes.push_back(make_pair(200, 10));
+	instanceSizes.push_back(make_pair(200, 20));
+	instanceSizes.push_back(make_pair(500, 20));
+	return instanceSizes;
+}
+
+vector<pair<size_t, size_t>> getAllInstanceSizesSkip1()
+{
+	vector<pair<size_t, size_t>> instanceSizes;
+	instanceSizes.push_back(make_pair(20, 5));
+	instanceSizes.push_back(make_pair(20, 10));
+	instanceSizes.push_back(make_pair(20, 20));
+	instanceSizes.push_back(make_pair(50, 5));
+	instanceSizes.push_back(make_pair(50, 10));
+	instanceSizes.push_back(make_pair(50, 20));
+	instanceSizes.push_back(make_pair(100, 5));
+	instanceSizes.push_back(make_pair(100, 10));
+	instanceSizes.push_back(make_pair(100, 20));
+	instanceSizes.push_back(make_pair(200, 10));
+	instanceSizes.push_back(make_pair(200, 20));
+	return instanceSizes;
+}
+
+vector<pair<size_t, size_t>> getAllInstanceSizesSkip3()
+{
+	vector<pair<size_t, size_t>> instanceSizes;
+	instanceSizes.push_back(make_pair(20, 5));
+	instanceSizes.push_back(make_pair(20, 10));
+	instanceSizes.push_back(make_pair(20, 20));
+	instanceSizes.push_back(make_pair(50, 5));
+	instanceSizes.push_back(make_pair(50, 10));
+	instanceSizes.push_back(make_pair(50, 20));
+	instanceSizes.push_back(make_pair(100, 5));
+	instanceSizes.push_back(make_pair(100, 10));
+	instanceSizes.push_back(make_pair(100, 20));
+	return instanceSizes;
+}
+
+vector<pair<size_t, size_t>> getAllInstanceSizesSkip4()
+{
+	vector<pair<size_t, size_t>> instanceSizes;
+	instanceSizes.push_back(make_pair(20, 5));
+	instanceSizes.push_back(make_pair(20, 10));
+	instanceSizes.push_back(make_pair(20, 20));
+	instanceSizes.push_back(make_pair(50, 5));
+	instanceSizes.push_back(make_pair(50, 10));
+	instanceSizes.push_back(make_pair(50, 20));
+	instanceSizes.push_back(make_pair(100, 5));
+	instanceSizes.push_back(make_pair(100, 10));
+	return instanceSizes;
+}
+
+vector<pair<size_t, size_t>> getAllInstanceSizesMakespan()
+{
+	vector<pair<size_t, size_t>> instanceSizes;
+	instanceSizes.push_back(make_pair(20, 5));
+	instanceSizes.push_back(make_pair(20, 10));
+	instanceSizes.push_back(make_pair(20, 20));
+	instanceSizes.push_back(make_pair(50, 5));
+	instanceSizes.push_back(make_pair(50, 10));
+	instanceSizes.push_back(make_pair(100, 5));
+	instanceSizes.push_back(make_pair(100, 10));
+	return instanceSizes;
+}

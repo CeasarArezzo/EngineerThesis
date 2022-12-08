@@ -3,7 +3,7 @@
 #include "InstanceReader.h"
 #include "ProblemInstance.h"
 #include "ProblemSolver.h"
-//#include <iostream>
+#include <iostream>
 using std::vector;
 
 void testMakespanCalculation()

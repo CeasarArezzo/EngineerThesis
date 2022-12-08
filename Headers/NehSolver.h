@@ -4,7 +4,7 @@
 #include <vector>
 using std::vector;
 
-class NehSolver:ProblemSolver
+class NehSolver : public ProblemSolver
 {
 	public:
 		vector<size_t> solve(ProblemInstance* pI);

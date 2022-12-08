@@ -5,7 +5,7 @@
 class SaSolver : public ProblemSolver
 {
 	public:
-		void setSolvingParams(initSolutionType initSol, neighType, coolingType, double T0, double Tend, size_t iters, double coolingRate);
+		void setParams(initSolutionType initSol, neighType, coolingType, double T0, double Tend, size_t iters, double coolingRate);
 		vector<size_t> solve(ProblemInstance*);
 		bool calculateAcceptance(size_t neighMakespan, size_t currMakespan, double temperature);
 		double reduceTemperature(double temperature, double coolingRate, coolingType);

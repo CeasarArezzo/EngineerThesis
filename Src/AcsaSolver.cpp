@@ -73,7 +73,7 @@ vector<size_t> AcsaSolver::solve(ProblemInstance* pI)
 		}
 		temperature = tempMin + coolingRate * exp(std::max(1 + rI - 0, (size_t)1));
 		//if (totalCoolingIters % 200 == 0)
-			std::cout << "acsaLoop:id" << " " << rI << " " << currMakespan << " " << bestKnownMakespan << " " << totalCoolingIters << "\n";
+			//std::cout << "acsaLoop:id" << " " << rI << " " << currMakespan << " " << bestKnownMakespan << " " << totalCoolingIters << "\n";
 	}
 	return bestKnownSol;
 }
