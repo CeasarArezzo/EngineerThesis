@@ -1,5 +1,6 @@
 # EngineerThesis
 Program należy skompilować w programie Visual Studio 2019. W razie braku możliwości, załączona została gotowa, skompilowana wersja programu.
+<<<<<<< HEAD
 Po uruchomieniu programu, wyświetli sie prośba o podanie numeru eksperymentu do uruchomienia. Po podaniu numeru należy wcisnąć enter, by uruchomić eksperyment. Program zacznie generować wtedy dane wynikowe wykorzystane do stworzenia wykresów w pracy. Plik tekstowy z wynikami pojawi się w lokacji uruchomienia programu.
 Lista eksperymentów:
 1. Strojenie algorytmu Neh+
@@ -21,3 +22,5 @@ Lista eksperymentów:
 17. Porównanie czasu wykonywania wszystkich algorytmów
 18. Porównanie wyników dla wszystkich algorytmów 
 19. Porównanie czasów funkcji obliczających wartość danego rozwiązania
+=======
+>>>>>>> 301b1c6d51b2021f420ec6e18f551c3b97a4f519
