@@ -1,0 +1,23 @@
+# EngineerThesis
+Program należy skompilować w programie Visual Studio 2019. W razie braku możliwości, załączona została gotowa, skompilowana wersja programu.
+Po uruchomieniu programu, wyświetli sie prośba o podanie numeru eksperymentu do uruchomienia. Po podaniu numeru należy wcisnąć enter, by uruchomić eksperyment. Program zacznie generować wtedy dane wynikowe wykorzystane do stworzenia wykresów w pracy. Plik tekstowy z wynikami pojawi się w lokacji uruchomienia programu.
+Lista eksperymentów:
+1. Strojenie algorytmu Neh+
+2. Strojenie parametru T_min dla algorytmu ACSA
+3. Strojenie parametru alfa dla algorytmu ACSA
+4. Strojenie parametru T_0 dla algorytmu SA ze schematem geometrycznym
+5. Strojenie parametru T_0 dla algorytmu SA ze schematem liniowym
+6. Strojenie parametru T_0 dla algorytmu SA ze schematem logarytmicznym
+7. Strojenie parametru T_k dla algorytmu SA ze schematem geometrycznym
+8. Strojenie parametru T_k dla algorytmu SA ze schematem liniowym
+9. Strojenie parametru T_k dla algorytmu SA ze schematem logarytmicznym
+10. Strojenie współczynnika chłodzenia dla algorytmu SA ze schematem geometrycznym
+11. Strojenie współczynnika chłodzenia dla algorytmu SA ze schematem liniowym
+12. Porównanie schematów chłodzenia w algorytmie SA
+13. Porywnanie typów sąsiedztwa w algorytmie SA
+14. Porównanie typów rozwiązań początkowych w algorytmie SA
+15. Porywnanie typów sąsiedztwa w algorytmie ACSA
+16. Porównanie typów rozwiązań początkowych w algorytmie ACSA
+17. Porównanie czasu wykonywania wszystkich algorytmów
+18. Porównanie wyników dla wszystkich algorytmów 
+19. Porównanie czasów funkcji obliczających wartość danego rozwiązania
